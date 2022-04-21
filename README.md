@@ -1,4 +1,4 @@
-# milkdrop - buildable for Visual Studio 2019
+# Milkdrop - Buildable for Visual Studio 2019
 This is the well-known Winamp plugin, written by Ryan Geiss. Full credit goes to him for creating it. It was open sourced from the official web site here:
 https://www.geisswerks.com/milkdrop/
 
