@@ -8385,7 +8385,7 @@ retry:
                             p = NextLine(p);
                             if (p && !strncmp(p, "fRating=", 8)) 
                             {
-                                _sscanf_l(&p[8], "%f", g_use_C_locale, &fRating);
+                                sscanf(&p[8], "%f", &fRating);
                                 bRatingKnown = true;
                                 break;
                             }

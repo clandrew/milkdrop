@@ -103,11 +103,11 @@ float GetPrivateProfileFloatW(wchar_t *szSectionName, wchar_t *szKeyName, float 
     wchar_t szDefault[64];
     float ret = fDefault;
 
-    _swprintf_l(szDefault, L"%f", g_use_C_locale, fDefault);
+    _swprintf(szDefault, L"%f", fDefault);
 
     if (GetPrivateProfileStringW(szSectionName, szKeyName, szDefault, string, 64, szIniFile) > 0)
     {
-        _swscanf_l(string, L"%f", g_use_C_locale, &ret);
+        swscanf(string, L"%f", &ret);
     }
     return ret;
 }

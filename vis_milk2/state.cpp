@@ -194,7 +194,7 @@ float GetFastFloat (const char* szVarName, float def, FILE* f)
     if (!_GetLineByName(f, szVarName, buf, 255))
         return def;
     float ret;
-    if (_sscanf_l(buf, "%f", g_use_C_locale, &ret)==1)
+    if (sscanf(buf, "%f", &ret)==1)
 	{
         return ret;
 	}

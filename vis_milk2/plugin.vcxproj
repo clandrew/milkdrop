@@ -148,6 +148,11 @@
       <ImportLibrary>.\Debug/vis_milk2.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir)*.dll "E:\Program Files (x86)\Winamp\Plugins"
+copy $(TargetDir)*.pdb "E:\Program Files (x86)\Winamp\Plugins"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\ns-eel2\nseel-caltab.c" />
